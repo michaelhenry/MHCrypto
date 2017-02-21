@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3314E49D29DDC72EE12DA393 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3314E49D29DDC72EE12DA393 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3C7BB1D252CDD7DA14DD40E8 /* Pods_MHCrypto_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHCrypto_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		481F58B7D4FDCC9186A7C6B1 /* Pods_MHCrypto_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHCrypto_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* MHCrypto_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHCrypto_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,9 +62,9 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		889FC474C34B369D116F213E /* Pods-MHCrypto_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHCrypto_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHCrypto_Example/Pods-MHCrypto_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		ADE0797AB0356E8E01B5173C /* MHCrypto.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MHCrypto.podspec; path = ../MHCrypto.podspec; sourceTree = "<group>"; };
+		ADE0797AB0356E8E01B5173C /* MHCrypto.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MHCrypto.podspec; path = ../MHCrypto.podspec; sourceTree = "<group>"; };
 		B5C62D3D3E5AA9731FD3DA6E /* Pods-MHCrypto_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHCrypto_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHCrypto_Tests/Pods-MHCrypto_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BAD6FFDF690B668EE4E4AD99 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BAD6FFDF690B668EE4E4AD99 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C0024728DC40367B682D53DF /* Pods-MHCrypto_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHCrypto_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MHCrypto_Tests/Pods-MHCrypto_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E8E67CE726A15178B453F96D /* Pods-MHCrypto_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHCrypto_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MHCrypto_Example/Pods-MHCrypto_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -554,6 +554,7 @@
 			baseConfigurationReference = B5C62D3D3E5AA9731FD3DA6E /* Pods-MHCrypto_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -578,6 +579,7 @@
 			baseConfigurationReference = C0024728DC40367B682D53DF /* Pods-MHCrypto_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

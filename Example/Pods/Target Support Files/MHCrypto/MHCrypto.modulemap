@@ -1,0 +1,6 @@
+framework module MHCrypto {
+  umbrella header "MHCrypto-umbrella.h"
+
+  export *
+  module * { export * }
+}
