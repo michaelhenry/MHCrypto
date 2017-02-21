@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MHCrypto'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MHCrypto.'
+  s.summary          = 'Objective C - HMAC implementation for NSString and NSData(raw)'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,26 +17,19 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'Objective C - HMAC implementation for NSString and NSData(Raw)'
 
-  s.homepage         = 'https://github.com/Michael Henry Pantaleon/MHCrypto'
+  s.homepage         = 'https://github.com/michaelhenry/MHCrypto'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Michael Henry Pantaleon' => 'me@iamkel.net' }
-  s.source           = { :git => 'https://github.com/Michael Henry Pantaleon/MHCrypto.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/michaelhenry/MHCrypto.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/michaelhenry119'
 
   s.ios.deployment_target = '8.0'
-
   s.source_files = 'MHCrypto/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'MHCrypto' => ['MHCrypto/Assets/*.png']
-  # }
+  s.pod_target_xcconfig = {
+    'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
+  }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
