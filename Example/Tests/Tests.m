@@ -13,6 +13,34 @@
 SpecBegin(InitialSpecs)
 
 describe(@"Checking HMAC", ^{
+
+    it(@"can hash string with sha1", ^{
+        
+        NSString *sha1Text = [@"hello" mh_sha1];
+        
+        expect(sha1Text).to
+        .equal(@"aaf4c61ddcc5e8a2dabede0f3b482cd9aea9434d");
+        
+    });
+    
+    it(@"can hash string with sha256", ^{
+        
+        NSString *sha256Text = [@"hello" mh_sha256];
+        
+        expect(sha256Text).to
+        .equal(@"2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824");
+        
+    });
+    
+    
+    it(@"can hash string with md5", ^{
+        
+        NSString *md5Text = [@"hello" mh_md5];
+    
+        expect(md5Text).to
+            .equal(@"5d41402abc4b2a76b9719d911017c592");
+        
+    });
     
     it(@"can be a simple string key and message", ^{
         

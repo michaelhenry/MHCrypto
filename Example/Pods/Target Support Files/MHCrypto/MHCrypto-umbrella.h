@@ -13,6 +13,7 @@
 #import "MHCrypto.h"
 #import "NSData+HMACSha256.h"
 #import "NSData+MHCrypto.h"
+#import "NSString+Hash.h"
 #import "NSString+HMACMd5.h"
 #import "NSString+HMACSha1.h"
 #import "NSString+HMACSha224.h"
