@@ -10,7 +10,7 @@
 
 @implementation NSString (HMACSha384)
 
-- (NSData *) mh_sha384DigestWithMessage:(NSString*)message {
+- (NSData *) mh_hmacSha384DigestWithMessage:(NSString*)message {
     return [MHCrypto HMACWithMessage:message
                                key:self
                          algorithm:kCCHmacAlgSHA384

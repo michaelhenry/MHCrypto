@@ -9,6 +9,6 @@
 
 @interface NSString (HMACSha224)
 
-- (NSData *) mh_sha224DigestWithMessage:(NSString*)message;
+- (NSData *) mh_hmacSha224DigestWithMessage:(NSString*)message;
 
 @end

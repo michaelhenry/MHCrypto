@@ -8,6 +8,6 @@
 
 @interface NSString (HMACSha384)
 
-- (NSData *) mh_sha384DigestWithMessage:(NSString*)message;
+- (NSData *) mh_hmacSha384DigestWithMessage:(NSString*)message;
 
 @end

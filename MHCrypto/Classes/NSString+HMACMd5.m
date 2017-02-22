@@ -9,7 +9,7 @@
 #import "MHCrypto.h"
 @implementation NSString (HMACMd5)
 
-- (NSData *) mh_md5DigestWithMessage:(NSString*)message {
+- (NSData *) mh_hmacMd5DigestWithMessage:(NSString*)message {
     return [MHCrypto HMACWithMessage:message
                                key:self
                          algorithm:kCCHmacAlgMD5

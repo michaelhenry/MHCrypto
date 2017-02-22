@@ -8,6 +8,6 @@
 
 @interface NSData (HMACSha256)
 
-- (NSData *) mh_sha256DigestWithMessage:(NSString*)message;
+- (NSData *) mh_hmacSha256DigestWithMessage:(NSString*)message;
 
 @end
