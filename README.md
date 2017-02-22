@@ -3,6 +3,7 @@
 HASHING and HMAC implementation for nsstring and nsdata. 
 
 ### HOW to
+- Please run the test. thanks
 
 ```objc
 
@@ -34,18 +35,18 @@ expect([kSigning mh_toHexString]).to.equal(@"f4780e2d9f65fa895f9c67b32ce1baf0b0d
 
 
 NSString *sha1Text = [@"hello" mh_sha1];
-//expect(sha1Text).to
+expect(sha1Text).to
 .equal(@"aaf4c61ddcc5e8a2dabede0f3b482cd9aea9434d");
 
 
 NSString *sha256Text = [@"hello" mh_sha256];
-//expect(sha256Text).to
+expect(sha256Text).to
 .equal(@"2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824");
 
 
  
 NSString *md5Text = [@"hello" mh_md5];
-// expect(md5Text).to
+expect(md5Text).to
 .equal(@"5d41402abc4b2a76b9719d911017c592");
 
 ```
