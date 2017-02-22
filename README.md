@@ -2,6 +2,8 @@
 
 HASHING and HMAC implementation for nsstring and nsdata. 
 
+[![Build Status](https://travis-ci.org/michaelhenry/MHCrypto.svg?branch=master)](https://travis-ci.org/michaelhenry/MHCrypto)
+
 ### HOW to
 - Please run the test. thanks
 
