@@ -16,6 +16,9 @@
                    algorithm:(CCHmacAlgorithm)algorithm
                 digestLength:(NSUInteger)digestLength;
 
-+ (NSData*) sha256DigestWithObject:(id) obj;
++ (NSData*) sha1DigestWithObject:(id) obj;
 
++ (NSData*) sha256DigestWithObject: (id) obj;
+    
++ (NSData*) md5DigestWithObject: (id) obj;
 @end
