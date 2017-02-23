@@ -4,6 +4,10 @@ HASHING and HMAC implementation for nsstring and nsdata.
 
 [![Build Status](https://travis-ci.org/michaelhenry/MHCrypto.svg?branch=master)](https://travis-ci.org/michaelhenry/MHCrypto)
 
+[![CocoaPods](https://img.shields.io/cocoapods/v/MHCrypto.svg)]()
+[![iamkel.net](https://img.shields.io/badge/website-iamkel.net-blue.svg)]()
+
+
 ### HOW to
 - Please run the test. thanks
 
